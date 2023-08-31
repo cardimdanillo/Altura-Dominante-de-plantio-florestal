@@ -495,15 +495,15 @@ AltDom <- format(round(AltDom, 3), nsmall = 3)
 
 AltDom$Parcela <- as.integer(AltDom$Parcela)
 
-write.table(AltDom, file = "AltDom_JulioCesar.txt", sep = "\t",
+write.table(AltDom, file = "AltDom_Natalia.txt", sep = "\t",
             row.names = TRUE, col.names = NA, quote = FALSE)
 
 
 hdom <- bind_rows(tab19,tab20,tab21,tab22)
-write.table(hdom, file = "hdom_site_JulioCesar.txt", sep = "\t",
+write.table(hdom, file = "hdom_site_Natalia.txt", sep = "\t",
             row.names = TRUE, col.names = NA, quote = FALSE)
 
-write.table(hdom, file = "hdom_site_JulioCesar.xlsx", sep = "\t",
+write.table(hdom, file = "hdom_site_Natalia.xlsx", sep = "\t",
             row.names = TRUE, col.names = NA, quote = FALSE)
 
 
@@ -517,7 +517,7 @@ row.names(modelos) <- c("int", "DAP")
 
 modelos <- format(round(modelos, 4), nsmall = 4)
 
-write.table(modelos, file = "CoefAlt_Curtis_JulioCesar.txt", sep = "\t\t",
+write.table(modelos, file = "CoefAlt_Curtis_Natalia.txt", sep = "\t\t",
             row.names = TRUE, col.names = NA, quote = FALSE)
 
 modelos2 <- data.frame("Trorey 2019" = c(fit_tro_19[3]),
@@ -530,5 +530,5 @@ row.names(modelos2) <- c("int", "DAP", "DAP?")
 
 modelos2 <- format(round(modelos2, 4), nsmall = 4)
 
-write.table(modelos2, file = "CoefAlt_Trorey_JulioCesar.txt", sep = "\t\t",
+write.table(modelos2, file = "CoefAlt_Trorey_Natalia.txt", sep = "\t\t",
             row.names = TRUE, col.names = NA, quote = FALSE)
