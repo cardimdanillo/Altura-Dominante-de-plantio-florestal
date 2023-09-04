@@ -27,8 +27,8 @@ cardim.danillo@outlook.com
 if(!require(dplyr)) install.packages(dplyr)
 library(dplyr)
 
-if(!require(tidyverse)) install.packages("tidyverse")
-library(tidyverse)
+if(!require(ggplot2)) install.packages(ggplot2)
+library(ggplot2)
 #####
 
 #####
